@@ -6,11 +6,6 @@ Ideaful is an iOS application designed to help you manage your ideas, tasks, not
 
 ## Getting Started
 
-### Prerequisites
-
-- Xcode (latest version recommended)
-- iOS 17.0+ (Requires modern SwiftUI support)
-
 ### Installation
 
 1. Clone the repository.
