@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mapping version="1.0" xmlns="http://www.apple.com/xml/ns/coredata/mapping/1.0">
+    <sourceModel identifier="Ideaful 4" name="Ideaful 4"/>
+    <destinationModel identifier="Ideaful 5" name="Ideaful 5"/>
+    <entityMapping name="AchievementToAchievement" sourceEntityName="Achievement" destinationEntityName="Achievement" mappingType="add">
+        <attributeMapping name="achievementDesc" valueExpression="$source.achievementDesc"/>
+        <attributeMapping name="achievementID" valueExpression="$source.achievementID"/>
+        <attributeMapping name="achievementTitle" valueExpression="$source.achievementTitle"/>
+        <attributeMapping name="isUnlocked" valueExpression="$source.isUnlocked"/>
+    </entityMapping>
+    <entityMapping name="IdeaToIdea" sourceEntityName="Idea" destinationEntityName="Idea" mappingType="add">
+        <attributeMapping name="createDate" valueExpression="$source.createDate"/>
+        <attributeMapping name="id" valueExpression="$source.id"/>
+        <attributeMapping name="imagePaths" valueExpression="$source.imagePaths"/>
+        <attributeMapping name="imagesData" valueExpression="nil"/>
+        <attributeMapping name="note" valueExpression="$source.note"/>
+        <attributeMapping name="notes" valueExpression="$source.notes"/>
+        <attributeMapping name="notesCreatedCount" valueExpression="$source.notesCreatedCount"/>
+        <attributeMapping name="notesDeletedCount" valueExpression="$source.notesDeletedCount"/>
+        <attributeMapping name="shortDesc" valueExpression="$source.shortDesc"/>
+        <attributeMapping name="status" valueExpression="$source.status"/>
+        <attributeMapping name="tasksCompletedCount" valueExpression="$source.tasksCompletedCount"/>
+        <attributeMapping name="tasksCreatedCount" valueExpression="$source.tasksCreatedCount"/>
+        <attributeMapping name="tasksDeletedCount" valueExpression="$source.tasksDeletedCount"/>
+        <attributeMapping name="title" valueExpression="$source.title"/>
+        <attributeMapping name="updateDate" valueExpression="$source.updateDate"/>
+    </entityMapping>
+    <entityMapping name="IdeaTaskToIdeaTask" sourceEntityName="IdeaTask" destinationEntityName="IdeaTask" mappingType="add">
+        <attributeMapping name="dueDate" valueExpression="$source.dueDate"/>
+        <attributeMapping name="isCompleted" valueExpression="$source.isCompleted"/>
+        <attributeMapping name="priorityLevel" valueExpression="$source.priorityLevel"/>
+        <attributeMapping name="reminder" valueExpression="$source.reminder"/>
+        <attributeMapping name="taskDesc" valueExpression="$source.taskDesc"/>
+        <attributeMapping name="tasked" valueExpression="$source.tasked"/>
+    </entityMapping>
+    <entityMapping name="NoteToNote" sourceEntityName="Note" destinationEntityName="Note" mappingType="add">
+        <attributeMapping name="text" valueExpression="$source.text"/>
+        <attributeMapping name="timeStamp" valueExpression="$source.timeStamp"/>
+        <attributeMapping name="title" valueExpression="$source.title"/>
+    </entityMapping>
+    <entityMapping name="StatsToStats" sourceEntityName="Stats" destinationEntityName="Stats" mappingType="add">
+        <attributeMapping name="totalIdeasCancelled" valueExpression="$source.totalIdeasCancelled"/>
+        <attributeMapping name="totalIdeasCompleted" valueExpression="$source.totalIdeasCompleted"/>
+        <attributeMapping name="totalIdeasCreated" valueExpression="$source.totalIdeasCreated"/>
+        <attributeMapping name="totalIdeasDeleted" valueExpression="$source.totalIdeasDeleted"/>
+        <attributeMapping name="totalNotesCreated" valueExpression="$source.totalNotesCreated"/>
+        <attributeMapping name="totalNotesDeleted" valueExpression="$source.totalNotesDeleted"/>
+        <attributeMapping name="totalTasksCompleted" valueExpression="$source.totalTasksCompleted"/>
+        <attributeMapping name="totalTasksCreated" valueExpression="$source.totalTasksCreated"/>
+        <attributeMapping name="totalTasksDeleted" valueExpression="$source.totalTasksDeleted"/>
+        <attributeMapping name="totalTasksUncompleted" valueExpression="$source.totalTasksUncompleted"/>
+    </entityMapping>
+</mapping>

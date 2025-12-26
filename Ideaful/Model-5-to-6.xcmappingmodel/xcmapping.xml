@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mapping version="1.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23231" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entityMapping name="AchievementToAchievement" sourceEntity="Achievement" destinationEntity="Achievement" mappingType="add">
+        <attributeMapping name="achievementDesc" type="direct" sourceExpression="$source.achievementDesc"/>
+        <attributeMapping name="achievementID" type="direct" sourceExpression="$source.achievementID"/>
+        <attributeMapping name="achievementTitle" type="direct" sourceExpression="$source.achievementTitle"/>
+        <attributeMapping name="isUnlocked" type="direct" sourceExpression="$source.isUnlocked"/>
+    </entityMapping>
+    <entityMapping name="IdeaToIdea" sourceEntity="Idea" destinationEntity="Idea" mappingType="add">
+        <attributeMapping name="createDate" type="direct" sourceExpression="$source.createDate"/>
+        <attributeMapping name="id" type="direct" sourceExpression="$source.id"/>
+        <attributeMapping name="imagePaths" type="direct" sourceExpression="$source.imagePaths"/>
+        <attributeMapping name="imagesData" type="direct" sourceExpression="$source.imagesData"/>
+        <attributeMapping name="note" type="direct" sourceExpression="$source.note"/>
+        <attributeMapping name="notes" type="direct" sourceExpression="$source.notes"/>
+        <attributeMapping name="notesCreatedCount" type="direct" sourceExpression="$source.notesCreatedCount"/>
+        <attributeMapping name="notesDeletedCount" type="direct" sourceExpression="$source.notesDeletedCount"/>
+        <attributeMapping name="shortDesc" type="direct" sourceExpression="$source.shortDesc"/>
+        <attributeMapping name="status" type="direct" sourceExpression="$source.status"/>
+        <attributeMapping name="tasksCompletedCount" type="direct" sourceExpression="$source.tasksCompletedCount"/>
+        <attributeMapping name="tasksCreatedCount" type="direct" sourceExpression="$source.tasksCreatedCount"/>
+        <attributeMapping name="tasksDeletedCount" type="direct" sourceExpression="$source.tasksDeletedCount"/>
+        <attributeMapping name="title" type="direct" sourceExpression="$source.title"/>
+        <attributeMapping name="updateDate" type="direct" sourceExpression="$source.updateDate"/>
+        <relationshipMapping name="ideaNotes" type="direct" sourceExpression="$source.ideaNotes"/>
+        <relationshipMapping name="tasks" type="direct" sourceExpression="$source.tasks"/>
+    </entityMapping>
+    <entityMapping name="IdeaTaskToIdeaTask" sourceEntity="IdeaTask" destinationEntity="IdeaTask" mappingType="add">
+        <attributeMapping name="dueDate" type="direct" sourceExpression="$source.dueDate"/>
+        <attributeMapping name="isCompleted" type="direct" sourceExpression="$source.isCompleted"/>
+        <attributeMapping name="priorityLevel" type="direct" sourceExpression="$source.priorityLevel"/>
+        <attributeMapping name="reminder" type="direct" sourceExpression="$source.reminder"/>
+        <attributeMapping name="taskDesc" type="direct" sourceExpression="$source.taskDesc"/>
+        <attributeMapping name="tasked" type="direct" sourceExpression="$source.tasked"/>
+        <relationshipMapping name="idea" type="direct" sourceExpression="$source.idea"/>
+    </entityMapping>
+    <entityMapping name="NoteToNote" sourceEntity="Note" destinationEntity="Note" mappingType="add">
+        <attributeMapping name="text" type="direct" sourceExpression="$source.text"/>
+        <attributeMapping name="timeStamp" type="direct" sourceExpression="$source.timeStamp"/>
+        <attributeMapping name="title" type="direct" sourceExpression="$source.title"/>
+        <relationshipMapping name="idea" type="direct" sourceExpression="$source.idea"/>
+    </entityMapping>
+    <entityMapping name="StatsToStats" sourceEntity="Stats" destinationEntity="Stats" mappingType="add">
+        <attributeMapping name="totalIdeasCancelled" type="direct" sourceExpression="$source.totalIdeasCancelled"/>
+        <attributeMapping name="totalIdeasCompleted" type="direct" sourceExpression="$source.totalIdeasCompleted"/>
+        <attributeMapping name="totalIdeasCreated" type="direct" sourceExpression="$source.totalIdeasCreated"/>
+        <attributeMapping name="totalIdeasDeleted" type="direct" sourceExpression="$source.totalIdeasDeleted"/>
+        <attributeMapping name="totalNotesCreated" type="direct" sourceExpression="$source.totalNotesCreated"/>
+        <attributeMapping name="totalNotesDeleted" type="direct" sourceExpression="$source.totalNotesDeleted"/>
+        <attributeMapping name="totalTasksCompleted" type="direct" sourceExpression="$source.totalTasksCompleted"/>
+        <attributeMapping name="totalTasksCreated" type="direct" sourceExpression="$source.totalTasksCreated"/>
+        <attributeMapping name="totalTasksDeleted" type="direct" sourceExpression="$source.totalTasksDeleted"/>
+        <attributeMapping name="totalTasksUncompleted" type="direct" sourceExpression="$source.totalTasksUncompleted"/>
+    </entityMapping>
+</mapping>

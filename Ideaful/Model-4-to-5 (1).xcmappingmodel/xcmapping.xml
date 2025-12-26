@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mappingModel type="com.apple.IDECoreDataModeler.MappingModel" documentVersion="1.0" lastSavedToolsVersion="23231" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entityMapping name="AchievementToAchievement" mappingType="add" sourceEntityName="Achievement" destinationEntityName="Achievement">
+        <attributeMapping name="achievementDesc" mappingType="direct"/>
+        <attributeMapping name="achievementID" mappingType="direct"/>
+        <attributeMapping name="achievementTitle" mappingType="direct"/>
+        <attributeMapping name="isUnlocked" mappingType="direct"/>
+    </entityMapping>
+    <entityMapping name="IdeaToIdea" mappingType="transform" sourceEntityName="Idea" destinationEntityName="Idea">
+        <attributeMapping name="createDate" mappingType="direct"/>
+        <attributeMapping name="id" mappingType="direct"/>
+        <attributeMapping name="imagePaths" mappingType="direct"/>
+        <attributeMapping name="note" mappingType="direct"/>
+        <attributeMapping name="notes" mappingType="direct"/>
+        <attributeMapping name="notesCreatedCount" mappingType="direct"/>
+        <attributeMapping name="notesDeletedCount" mappingType="direct"/>
+        <attributeMapping name="shortDesc" mappingType="direct"/>
+        <attributeMapping name="status" mappingType="direct"/>
+        <attributeMapping name="tasksCompletedCount" mappingType="direct"/>
+        <attributeMapping name="tasksCreatedCount" mappingType="direct"/>
+        <attributeMapping name="tasksDeletedCount" mappingType="direct"/>
+        <attributeMapping name="title" mappingType="direct"/>
+        <attributeMapping name="updateDate" mappingType="direct"/>
+        <relationshipMapping name="ideaNotes" mappingType="direct"/>
+        <relationshipMapping name="tasks" mappingType="direct"/>
+    </entityMapping>
+    <entityMapping name="IdeaTaskToIdeaTask" mappingType="add" sourceEntityName="IdeaTask" destinationEntityName="IdeaTask">
+        <attributeMapping name="dueDate" mappingType="direct"/>
+        <attributeMapping name="isCompleted" mappingType="direct"/>
+        <attributeMapping name="priorityLevel" mappingType="direct"/>
+        <attributeMapping name="reminder" mappingType="direct"/>
+        <attributeMapping name="taskDesc" mappingType="direct"/>
+        <attributeMapping name="tasked" mappingType="direct"/>
+        <relationshipMapping name="idea" mappingType="direct"/>
+    </entityMapping>
+    <entityMapping name="NoteToNote" mappingType="add" sourceEntityName="Note" destinationEntityName="Note">
+        <attributeMapping name="text" mappingType="direct"/>
+        <attributeMapping name="timeStamp" mappingType="direct"/>
+        <attributeMapping name="title" mappingType="direct"/>
+        <relationshipMapping name="idea" mappingType="direct"/>
+    </entityMapping>
+    <entityMapping name="StatsToStats" mappingType="add" sourceEntityName="Stats" destinationEntityName="Stats">
+        <attributeMapping name="totalIdeasCancelled" mappingType="direct"/>
+        <attributeMapping name="totalIdeasCompleted" mappingType="direct"/>
+        <attributeMapping name="totalIdeasCreated" mappingType="direct"/>
+        <attributeMapping name="totalIdeasDeleted" mappingType="direct"/>
+        <attributeMapping name="totalNotesCreated" mappingType="direct"/>
+        <attributeMapping name="totalNotesDeleted" mappingType="direct"/>
+        <attributeMapping name="totalTasksCompleted" mappingType="direct"/>
+        <attributeMapping name="totalTasksCreated" mappingType="direct"/>
+        <attributeMapping name="totalTasksDeleted" mappingType="direct"/>
+        <attributeMapping name="totalTasksUncompleted" mappingType="direct"/>
+    </entityMapping>
+</mappingModel>
