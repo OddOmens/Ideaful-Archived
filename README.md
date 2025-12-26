@@ -4,12 +4,6 @@
 
 Ideaful is an iOS application designed to help you manage your ideas, tasks, notes, and creative projects.
 
-## Open Source Release
-
-This codebase has been released as open source for educational and preservation purposes. It is provided **AS IS**, without warranty of any kind. The original authors and contributors are not liable for any issues arising from the use of this software.
-
-There is no active maintenance or support for this project. Feel free to fork, explore, and learn from it.
-
 ## Getting Started
 
 ### Prerequisites
@@ -31,6 +25,11 @@ There is no active maintenance or support for this project. Feel free to fork, e
 - **Notes**: Keep detailed notes for your projects.
 - **Statistics & Achievements**: Track your progress (some features may be disabled in the archive version).
 - **Dashboard**: Overview of your active ideas and tasks.
+
+## Requirements
+
+*   Xcode 15.0+
+*   iOS 17.0+
 
 ## Disclaimer
 
